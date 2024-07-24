@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --c1:#FFFFFF;
+    --c2:#ffA600;
+    --c3:#bc4b06;
+    --c4:#882200;
+}
+h2{font-size: 50px;letter-spacing: -1px;}
+
+nav{
+    background-color: var(--c3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    color: var(--c1);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style:oblique;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+}
+nav li>a{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--c1);
+}
+
+nav button{
+    font-weight:700;
+    padding: 10px;
+    color: var(--c1);
+    background-color: var(--c4);
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+nav button:hover{color: var(--c4);background-color: var(--c2);box-shadow: 0px 0px 10px 1px var(--c4);}
+
+
+#title{
+    position: relative;
+    top: 55px;
+    background-color: var(--c4);
+    height:500px;
+}
+#title>ul{list-style: none;height: 500px;}
+#title>ul>li{display: none;padding: 30px;gap: 50px;color: var(--c1);height: 100%;align-items: center;}
+#title>ul>li:nth-of-type(1){
+    display: flex;
+}
+#title>ul>li>span{width: 100%;line-height:55px;}
+#title>ul>li>span>p{
+    color: var(--c2);
+    font-size: larger;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 20px 0px 10px 0px;
+}
+#title>ul>li>span>ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    font-size: 20px;
+    list-style-type: "✔️";
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+#title>ul>li>span>button{
+    background-color: var(--c2);
+    color: var(--c1);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid var(--c1);
+    border-radius: 30px;
+}
+#title>ul>li>img{width: 40vw;aspect-ratio: 1.5;border: 1px solid;}
+#title>button{
+    position: absolute;
+    top: 435px;
+    background-color: rgba(255, 100, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    height: 50px;
+    aspect-ratio: 1;
+    font-size: x-large;
+    color: var(--c1);
+    border: none;
+    padding: 10px;
+}
+#title>button:nth-of-type(1){left: 1%;}
+#title>button:nth-of-type(2){left: 99%;transform: translate(-100%,0%);}
+
+
+#order{
+    position: relative;
+    margin-top: 55px;
+    background-color: var(--c2);
+    padding: 20px;
+    color: var(--c1);
+}
+#order>h2{width:100%;margin: 30px 0px;text-align: center;}
+#order>fieldset{
+    margin: 10px 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 40px;
+    border-color: var(--c1);
+    background-color: var(--c3);
+}
+#order>fieldset>legend{font-size: larger;background-color: var(--c4);padding: 10px;border: 1px solid var(--c1);}
+#order span{width: calc(100vw/5);aspect-ratio: 1.5;background-color: var(--c1);}
+
+
+#restaurant{background-color: var(--c2);margin-top: 2px;padding: 20px;color: var(--c1);}
+#restaurant>fieldset{
+    margin: 10px 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 40px;
+    border-color: var(--c1);
+    background-color: var(--c3);
+}
+#restaurant>fieldset>legend{font-size: larger;background-color: var(--c4);padding: 10px;border: 1px solid var(--c1);}
+#restaurant span{width: calc(100vw/5);aspect-ratio: 1.5;background-color: var(--c1);}
+
+#recipes{
+    background: url(images/design.png);
+    background-size:cover;
+    margin-top: 2px;
+    padding: 20px;
+    color: var(--c4);
+    padding: 30px;
+    font-size: 30px;
+    line-height: 50px;
+}
+#recipes>h2{
+    background-image: url(images/download.jpg);
+    line-height: 60px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+#recipes button{
+    font-size:20px;
+    padding: 10px;
+    background-color: var(--c4);
+    color: var(--c1);
+    border-radius: 20px;
+    border: 2px solid var(--c1);
+    margin: 60px 0px;
+}
